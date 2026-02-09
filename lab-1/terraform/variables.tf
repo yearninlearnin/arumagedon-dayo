@@ -61,7 +61,7 @@ variable "db_instance_class" {
 variable "db_name" {
   description = "Initial database name."
   type        = string
-  default     = "mysql"
+  default     = "fugakudb" #changed from "mysql"
 }
 
 variable "db_username" {
