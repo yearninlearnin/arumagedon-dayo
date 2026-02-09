@@ -1,0 +1,54 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0531c9e7ca764091e",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-00e720f8ff3cb2a43",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:477391720857:security-group/sg-0531c9e7ca764091e",
+            "OwnerId": "477391720857",
+            "GroupName": "umaisg-ec2-lab",
+            "Description": "sg for arma ",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "anywhere ",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "207.215.212.247/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

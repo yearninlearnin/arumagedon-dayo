@@ -1,0 +1,111 @@
+{
+    "DBInstances": [
+        {
+            "DBInstanceIdentifier": "lab-mysql-v3",
+            "DBInstanceClass": "db.t3.micro",
+            "Engine": "mysql",
+            "DBInstanceStatus": "available",
+            "MasterUsername": "admin",
+            "Endpoint": {
+                "Address": "lab-mysql-v3.c9qc04u42qc2.ap-northeast-1.rds.amazonaws.com",
+                "Port": 3306,
+                "HostedZoneId": "Z24O6O9L7SGTNB"
+            },
+            "AllocatedStorage": 20,
+            "InstanceCreateTime": "2026-01-27T16:02:01.394000+00:00",
+            "PreferredBackupWindow": "16:37-17:07",
+            "BackupRetentionPeriod": 1,
+            "DBSecurityGroups": [],
+            "VpcSecurityGroups": [
+                {
+                    "VpcSecurityGroupId": "sg-0dedf36821d3f0c32",
+                    "Status": "active"
+                }
+            ],
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql8.0",
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ],
+            "AvailabilityZone": "ap-northeast-1a",
+            "DBSubnetGroup": {
+                "DBSubnetGroupName": "default-vpc-00e720f8ff3cb2a43",
+                "DBSubnetGroupDescription": "Created from the RDS Management Console",
+                "VpcId": "vpc-00e720f8ff3cb2a43",
+                "SubnetGroupStatus": "Complete",
+                "Subnets": [
+                    {
+                        "SubnetIdentifier": "subnet-032e8c46ab2354899",
+                        "SubnetAvailabilityZone": {
+                            "Name": "ap-northeast-1a"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    },
+                    {
+                        "SubnetIdentifier": "subnet-054622acd35cd8a15",
+                        "SubnetAvailabilityZone": {
+                            "Name": "ap-northeast-1d"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    },
+                    {
+                        "SubnetIdentifier": "subnet-0f8b6a45302941b63",
+                        "SubnetAvailabilityZone": {
+                            "Name": "ap-northeast-1c"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    }
+                ]
+            },
+            "PreferredMaintenanceWindow": "tue:20:16-tue:20:46",
+            "UpgradeRolloutOrder": "second",
+            "PendingModifiedValues": {},
+            "LatestRestorableTime": "2026-01-30T20:40:00+00:00",
+            "MultiAZ": false,
+            "EngineVersion": "8.0.43",
+            "AutoMinorVersionUpgrade": true,
+            "ReadReplicaDBInstanceIdentifiers": [],
+            "LicenseModel": "general-public-license",
+            "StorageThroughput": 0,
+            "OptionGroupMemberships": [
+                {
+                    "OptionGroupName": "default:mysql-8-0",
+                    "Status": "in-sync"
+                }
+            ],
+            "PubliclyAccessible": false,
+            "StorageType": "gp2",
+            "DbInstancePort": 0,
+            "StorageEncrypted": true,
+            "KmsKeyId": "arn:aws:kms:ap-northeast-1:477391720857:key/2c3d2d29-35f9-4caf-84b2-d947cf829c53",
+            "DbiResourceId": "db-TT2ILAVHWBNDFHHS7HHPAKCCAM",
+            "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+            "DomainMemberships": [],
+            "CopyTagsToSnapshot": true,
+            "MonitoringInterval": 0,
+            "DBInstanceArn": "arn:aws:rds:ap-northeast-1:477391720857:db:lab-mysql-v3",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "DatabaseInsightsMode": "standard",
+            "PerformanceInsightsEnabled": false,
+            "DeletionProtection": false,
+            "AssociatedRoles": [],
+            "MaxAllocatedStorage": 1000,
+            "TagList": [],
+            "CustomerOwnedIpEnabled": false,
+            "NetworkType": "IPV4",
+            "ActivityStreamStatus": "stopped",
+            "BackupTarget": "region",
+            "CertificateDetails": {
+                "CAIdentifier": "rds-ca-rsa2048-g1",
+                "ValidTill": "2027-01-27T16:00:36+00:00"
+            },
+            "DedicatedLogVolume": false,
+            "IsStorageConfigUpgradeAvailable": false,
+            "EngineLifecycleSupport": "open-source-rds-extended-support-disabled"
+        }
+    ]
+}
