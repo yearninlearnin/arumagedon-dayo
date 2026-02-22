@@ -1,0 +1,36 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-083f83286b9a86655",
+            "IpPermissionsEgress": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "fugaku-rds-sg01"
+                }
+            ],
+            "VpcId": "vpc-09ec980c0c2a182cc",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:477391720857:security-group/sg-083f83286b9a86655",
+            "OwnerId": "477391720857",
+            "GroupName": "fugaku-rds-sg01",
+            "Description": "RDS security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 3306,
+                    "ToPort": 3306,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow MySQL from EC2 SG",
+                            "UserId": "477391720857",
+                            "GroupId": "sg-0b617aa82e1da4d6e"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

@@ -156,6 +156,15 @@ resource "aws_security_group" "fugaku_ec2_sg01" {
     protocol    = "tcp"
     cidr_blocks = ["157.131.250.221/32"]
   }
+  egress {
+    description = "Allow all outbound"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  
   tags = {
     Name = "${local.name_prefix}-ec2-sg01"
   }
@@ -238,8 +247,8 @@ resource "aws_iam_role" "fugaku_ec2_role01" {
     Version = "2012-10-17"
     Statement = [{
       Effect = "Allow"
-      Principal = { Service = "ec2.amazonaws.com" }
-      Action = "sts:AssumeRole"
+      Principal = { Service = "ec2.amazonaws.com" }  # so this is the trusted entity but terraform version
+      Action = "sts:AssumeRole"                  # cont- Principal = { Service = "ec2.amazonaws.com" } means only EC2 instances can assume this role.
     }]
   })
 }
@@ -295,6 +304,7 @@ resource "aws_instance" "fugaku_ec201" {
   subnet_id               = aws_subnet.fugaku_public_subnets[0].id
   vpc_security_group_ids  = [aws_security_group.fugaku_ec2_sg01.id]
   iam_instance_profile    = aws_iam_instance_profile.fugaku_instance_profile01.name
+  key_name               = "tokyoghoulageddon"
 
   # TODO: student supplies user_data to install app + CW agent + configure log shipping
   user_data = file("${path.module}/user_data.sh")

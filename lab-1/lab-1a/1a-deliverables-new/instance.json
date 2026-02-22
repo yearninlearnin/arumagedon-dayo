@@ -1,0 +1,168 @@
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0966e5b5e891c65f6",
+            "OwnerId": "477391720857",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2026-02-18T11:37:06+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-010ca1c1b08fb129d",
+                                "EbsCardIndex": 0
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20260218113703902200000001",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::477391720857:instance-profile/fugaku-instance-profile01",
+                        "Id": "AIPAW6JWDSGMSSIOWNLU5"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-54-65-109-29.ap-northeast-1.compute.amazonaws.com",
+                                "PublicIp": "54.65.109.29"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2026-02-18T11:37:05+00:00",
+                                "AttachmentId": "eni-attach-0621dd63b6e449115",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0b617aa82e1da4d6e",
+                                    "GroupName": "fugaku-ec2-sg01"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "06:35:a4:ac:3b:fd",
+                            "NetworkInterfaceId": "eni-0ec28d696d6137445",
+                            "OwnerId": "477391720857",
+                            "PrivateDnsName": "ip-10-248-1-144.ap-northeast-1.compute.internal",
+                            "PrivateIpAddress": "10.248.1.144",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-54-65-109-29.ap-northeast-1.compute.amazonaws.com",
+                                        "PublicIp": "54.65.109.29"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-248-1-144.ap-northeast-1.compute.internal",
+                                    "PrivateIpAddress": "10.248.1.144"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0f59f466259f2c3a1",
+                            "VpcId": "vpc-09ec980c0c2a182cc",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-0b617aa82e1da4d6e",
+                            "GroupName": "fugaku-ec2-sg01"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "fugaku-ec201"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2026-02-18T11:37:05+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "uefi",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-0ac0e6a1b09466bb9",
+                    "ImageId": "ami-09cd9fdbf26acc6b4",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-10-248-1-144.ap-northeast-1.compute.internal",
+                    "PublicDnsName": "ec2-54-65-109-29.ap-northeast-1.compute.amazonaws.com",
+                    "StateTransitionReason": "",
+                    "KeyName": "tokyoghoulageddon",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t3.micro",
+                    "LaunchTime": "2026-02-18T11:37:05+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "apne1-az4",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "ap-northeast-1a"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-0f59f466259f2c3a1",
+                    "VpcId": "vpc-09ec980c0c2a182cc",
+                    "PrivateIpAddress": "10.248.1.144",
+                    "PublicIpAddress": "54.65.109.29"
+                }
+            ]
+        }
+    ]
+}

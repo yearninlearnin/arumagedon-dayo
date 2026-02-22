@@ -1,0 +1,62 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0b617aa82e1da4d6e",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow all outbound",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "fugaku-ec2-sg01"
+                }
+            ],
+            "VpcId": "vpc-09ec980c0c2a182cc",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:477391720857:security-group/sg-0b617aa82e1da4d6e",
+            "OwnerId": "477391720857",
+            "GroupName": "fugaku-ec2-sg01",
+            "Description": "EC2 app security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow HTTP",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow SSH from my IP",
+                            "CidrIp": "REDACTED-FOR-SEC-PURPOSES/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
