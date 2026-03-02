@@ -19,10 +19,10 @@ set -euo pipefail
 # ============================================================
 
 # ---------- Inputs (override via env) ----------
-REGION="${REGION:-us-east-1}"
-INSTANCE_ID="${INSTANCE_ID:-}"
-SECRET_ID="${SECRET_ID:-}"
-DB_ID="${DB_ID:-}"
+REGION="${REGION:-ap-northeast-1}"
+INSTANCE_ID="${INSTANCE_ID:-i-0ac0e6a1b09466bb9}"
+SECRET_ID="${SECRET_ID:-fugaku/rds/mysql}"
+DB_ID="${DB_ID:-fugaku-rds01}"
 
 # toggles pass-through
 REQUIRE_ROTATION="${REQUIRE_ROTATION:-false}"

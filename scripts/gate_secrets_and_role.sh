@@ -27,13 +27,13 @@ set -euo pipefail
 # ============================================================
 
 # ---------- Defaults (override via env or flags) ----------
-REGION="${REGION:-us-east-1}"
-INSTANCE_ID="${INSTANCE_ID:-}"
-SECRET_ID="${SECRET_ID:-}"
+REGION="${REGION:-ap-northeast-1}"
+INSTANCE_ID="${INSTANCE_ID:-i-0ac0e6a1b09466bb9}"
+SECRET_ID="${SECRET_ID:-fugaku/rds/mysql}"
 OUT_JSON="${OUT_JSON:-gate_result.json}"
 
 # toggles (default: strict but sane)
-REQUIRE_ROTATION="${REQUIRE_ROTATION:-false}"          # true/false
+REQUIRE_ROTATION="${REQUIRE_ROTATION:-false}"          # true/false #this has to be set 
 CHECK_SECRET_POLICY_WILDCARD="${CHECK_SECRET_POLICY_WILDCARD:-true}"  # true/false
 CHECK_SECRET_VALUE_READ="${CHECK_SECRET_VALUE_READ:-false}"           # true/false (run on EC2 only)
 EXPECTED_ROLE_NAME="${EXPECTED_ROLE_NAME:-}"           # optional; if blank, script resolves from instance profile

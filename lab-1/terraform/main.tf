@@ -154,7 +154,7 @@ resource "aws_security_group" "fugaku_ec2_sg01" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["157.131.250.221/32"]
+    cidr_blocks = ["157.131.250.221/32"] 
   }
   egress {
     description = "Allow all outbound"
